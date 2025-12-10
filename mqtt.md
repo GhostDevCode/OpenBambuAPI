@@ -664,6 +664,28 @@ Gives basic control commands for the AMS.
 
 TODO
 
+## ams.filament.drying
+Start drying cyle
+```json
+**Request**
+{
+  "print": {
+    "sequence_id": "0",
+    "ams_id": 131,
+    "command": "ams_filament_drying",
+    "cooling_temp": 40,
+    "duration": 0,
+    "humidity": 0,
+    "mode": 0,
+    "rotate_tray": false,
+    "temp": 0
+  }
+}
+```
+This works only with AMS 2 Pro and AMS HT. AMS 2 Pro max temp 65C and Ht 85C I belief.
+**Report**
+TODO
+
 ## print.print_speed
 
 Set print speed to one of the 4 presets.
